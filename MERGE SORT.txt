@@ -1,0 +1,33 @@
+MERGE SORT 
+
+Merge sort’un özelliği problemi parçalara bölmesidir ve problem parçalara bölündüğünde zaman karmaşıklığı logaritmik zamana iner. Bu da exponiensel olanlara göre çok daha iyi sonuç vermesi anlamına gelmektedir. 
+
+Merge sort’ta ana mantık parçala ve fethet’dir. Parçala ve fethet’in mantığı ;
+1. Problem küçük parçalara bölünür.
+2. Daha küçük parçalara bölünen problemler çözülür.
+3. Çözülmüş küçük parçalar tekrar birleştirilir.
+
+
+Proje 2
+
+[16,21,11,8,12,22] ( Merge Sort )
+
+1)Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+Öncelikle 6 sayımız olduğu için 3 'er 3 ' er gruplara ayırıyoruz 
+yani; 1.aşama  {16,21,11}          {8,12,22}  
+     
+      2.aşama   {16,21} {11}          {8,12} {22} 
+
+      3.aşama {16} {21} {11}                {8} {12} {22} 
+
+4.aşamada ise 1. aşamada oluşan gruplar kendi içerisinde sıralanır ve tekrar sıralı 3' er li iki grup haline gelir. 
+        yani ; {11,16,21}   ve {8,12,22}  
+
+ 5. aşamada ise küçükten büyüğe doğru kendiçiçnde sıralanıp 6 'lı veri oluşur. 
+        {8,11,12,16,21,22}
+           
+Big-O gösterimini yazınız.
+2^x =n 
+logn=x 
+merge sort için BiG O gösterimi O(nlogn) 'dir. 
